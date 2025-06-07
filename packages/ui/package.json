@@ -19,7 +19,8 @@
     "lint": "eslint 'src/**/*.{ts,tsx}' --fix",
     "check-types": "tsc --noEmit",
     "storybook": "storybook dev -p 6006",
-    "build-storybook": "storybook build"
+    "build-storybook": "storybook build",
+    "npm-publish": "npm publish --access public"
   },
   "peerDependencies": {
     "react": ">=18.0.0",
