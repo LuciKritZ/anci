@@ -38,3 +38,5 @@ coverage/
 # Turbo/monorepo
 .turbo/
 .pnpm-debug.log
+
+*storybook.log
