@@ -1,5 +1,5 @@
 {
-  "name": "luci-ui",
+  "name": "anci",
   "private": true,
   "scripts": {
     "build": "turbo run build",
@@ -7,7 +7,7 @@
     "lint": "turbo run lint",
     "format": "prettier --write \"**/*.{ts,tsx,md}\"",
     "check-types": "turbo run check-types",
-    "storybook": "pnpm --filter @luci-ui/core run storybook"
+    "storybook": "pnpm --filter @anci/ui run storybook"
   },
   "devDependencies": {
     "@storybook/addon-essentials": "^8.6.14",
