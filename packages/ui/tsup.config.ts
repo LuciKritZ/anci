@@ -1,7 +1,15 @@
 import { defineConfig } from 'tsup';
 
 export default defineConfig({
-  entry: ['src/index.ts'],
+  entry: [
+    'src/index.ts',
+    'src/**/*.{ts,tsx}',
+    '!src/**/*.stories.*',
+    '!src/**/*.test.*',
+    '!src/**/*.spec.*',
+    '!src/**/__tests__/**',
+    '!src/**/.storybook/**',
+  ],
   format: ['esm', 'cjs'],
   dts: true,
   sourcemap: true,
@@ -10,16 +18,4 @@ export default defineConfig({
   skipNodeModulesBundle: true,
   treeshake: true,
   outDir: 'dist',
-  external: [
-    // Exclude all Storybook files
-    '**/*.stories.*',
-    '**/.storybook/**',
-    '**/stories/**',
-    // Exclude test files
-    '**/__tests__/**',
-    '**/*.test.*',
-    '**/*.spec.*',
-  ],
-  // Ensure external patterns are strictly enforced
-  noExternal: [/^(?!.*\.(stories|test|spec)\.).*$/],
 });

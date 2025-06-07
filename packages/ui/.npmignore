@@ -1,0 +1,9 @@
+src/
+.storybook/
+*.stories.*
+*.test.*
+*.map
+tsconfig.json
+tsup.config.ts
+vitest.config.ts
+__tests__/
